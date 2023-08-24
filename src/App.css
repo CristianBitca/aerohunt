@@ -1,0 +1,330 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+:root {
+  --primary-color: #a5dee5;
+  --secondary-color: #111111;
+  --background-color: #cdedf0;
+  --accent-color: #7dcfda;
+  --text-color: #2a2a2a;
+  --black-color: #000000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Search Form Styles */
+.search-form-container {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 460px;
+  align-content: center;
+}
+
+.search-form-heading {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.input-field,
+.range-field,
+.search-button,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.range-field {
+  width: calc(100% - 40px);
+}
+
+.search-button {
+  background-color: var(--accent-color);
+  color:  var(--text-color) ;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.search-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Flight Card Styles */
+.flight-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.flight-info-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.time-cell {
+  font-weight: bold;
+}
+
+.outbound-cell {
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.airport-cell {
+  font-style: italic;
+}
+
+.airline-cell {
+  text-align: center;
+}
+
+/* Other Styles */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.flight-card-container {
+  width: 90%;
+}
+
+.flight-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.flight-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  min-width: 500px;
+}
+
+.flight-column {
+  flex: 1;
+}
+
+.flight-leg {
+  margin-bottom: 15px;
+}
+
+.airport-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.departure-time,
+.arrival-time {
+  color: #888;
+}
+
+.separator {
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.details-button {
+  display: block;
+  margin-top: 15px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.details-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.loader {
+  display: inline-block;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--primary-color);
+  padding: 20px 0;
+}
+
+.logo img {
+  width: 500px;
+  height: 100px;
+}
+
+/* Flight List Container Styles */
+.flight-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.flight-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Loading Message Styles */
+.flight-cards p {
+  text-align: center;
+}
+
+.form-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Style for the square container */
+.radio-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  padding: 1px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 50%;
+  margin-bottom: 10px; /* Add margin to separate from other content */
+}
+
+/* Style for individual radio button options */
+.radio-option {
+  display: flex;
+  align-items: center;
+}
+
+.radio-label {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Style for the selected form container */
+.selected-form {
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+}
+  
+  .card {
+    position: relative;
+    width: 400px;
+    height: 120px;
+    border-radius: 10px;
+    padding: 0 50px;
+    margin: 50px auto;
+    background-color: rgb(162, 166, 178);
+  }
+  .title {
+    font-family: sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+  .input-field {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .location-type-select {
+    margin-top: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .suggestion-list-container {
+    position: absolute;
+    width: 24%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
+  }
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
