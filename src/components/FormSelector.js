@@ -1,4 +1,3 @@
-// FormSelector.js
 import React, { useState } from 'react';
 import SearchFormOneWay from './SearchFormOneWay';
 import SearchFormOneWayRange from './SearchFormOneWayRange';

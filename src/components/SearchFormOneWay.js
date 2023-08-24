@@ -1,5 +1,5 @@
 import React from 'react';
-import AutosuggestionInput from './AutoSuggestionInput'; // Make sure to adjust the import path
+import AutosuggestionInput from './AutoSuggestionInput';
 
 function SearchForm({ searchParams, handleSearchChange, fetchFlights, loading }) {
   const maxPassengers = 9;

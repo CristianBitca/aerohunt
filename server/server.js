@@ -9,7 +9,6 @@ const port = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-// Fetch flights route
 app.get('/flights', async (req, res) => {
   try {
     const response = await axios.get('https://tequila-api.kiwi.com/v2/search', {

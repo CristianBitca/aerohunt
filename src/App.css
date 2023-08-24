@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -22,7 +21,6 @@ body {
   padding: 20px;
 }
 
-/* Search Form Styles */
 .search-form-container {
   background-color: #f7f7f7;
   padding: 20px;
@@ -75,7 +73,6 @@ select {
   color: var(--primary-color);
 }
 
-/* Flight Card Styles */
 .flight-card {
   border: 1px solid #ccc;
   padding: 10px;
@@ -110,7 +107,6 @@ select {
   text-align: center;
 }
 
-/* Other Styles */
 .app-container {
   display: flex;
   justify-content: center;
@@ -198,7 +194,6 @@ select {
   animation: spin 1s linear infinite;
 }
 
-/* Header Styles */
 header {
   background-color: var(--primary-color);
   padding: 20px 0;
@@ -209,7 +204,6 @@ header {
   height: 100px;
 }
 
-/* Flight List Container Styles */
 .flight-list-container {
   display: flex;
   justify-content: center;
@@ -226,7 +220,6 @@ header {
   padding: 20px;
 }
 
-/* Loading Message Styles */
 .flight-cards p {
   text-align: center;
 }
@@ -238,7 +231,6 @@ header {
   margin: 20px;
 }
 
-/* Style for the square container */
 .radio-container {
   display: flex;
   justify-content: space-between;
@@ -247,10 +239,9 @@ header {
   border: 1px solid #ccc;
   border-radius: 10px;
   width: 50%;
-  margin-bottom: 10px; /* Add margin to separate from other content */
+  margin-bottom: 10px; 
 }
 
-/* Style for individual radio button options */
 .radio-option {
   display: flex;
   align-items: center;
@@ -261,7 +252,6 @@ header {
   margin-right: 10px;
 }
 
-/* Style for the selected form container */
 .selected-form {
   border-radius: 10px;
   padding: 20px;
