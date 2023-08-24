@@ -9,7 +9,7 @@ function SearchForm({ searchParams, handleSearchChange, fetchFlights, loading })
 
   return (
     <div className="search-form-container">
-      <h1 className="search-form-heading">Search for Flights </h1>
+      <h1 className="search-form-heading">Search for Flights Return </h1>
       <div className="search-form">
       <div className="form-row">
         <p>Fly From</p>
