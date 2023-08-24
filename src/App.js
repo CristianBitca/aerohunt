@@ -5,7 +5,7 @@ import Header from './components/Header';
 import FormSelector from './components/FormSelector';
 import FlightList from './components/FlightList';
 
-const serverBaseUrl = 'https://www.aerohunt.net';
+const serverBaseUrl = 'http://localhost:5000';
 
 function App() {
   const [flights, setFlights] = useState([]);
