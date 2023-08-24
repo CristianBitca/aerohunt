@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Fetch flights route
-app.get('/flights', async (req, res) => {
+app.get('https://www.aerohunt.net/flights', async (req, res) => {
   try {
     const response = await axios.get('https://tequila-api.kiwi.com/v2/search', {
       params: req.query,
