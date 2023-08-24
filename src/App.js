@@ -5,7 +5,7 @@ import Header from './components/Header';
 import FormSelector from './components/FormSelector';
 import FlightList from './components/FlightList';
 
-const serverBaseUrl = 'https://master.dr8jgwthbywdg.amplifyapp.com';
+const serverBaseUrl = 'https://www.aerohunt.net';
 
 function App() {
   const [flights, setFlights] = useState([]);
