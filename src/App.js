@@ -5,7 +5,7 @@ import Header from './components/Header';
 import FormSelector from './components/FormSelector';
 import FlightList from './components/FlightList';
 
-const serverBaseUrl = 'http://localhost:5000';
+const serverBaseUrl = ' https://s3h4dihfb1.execute-api.eu-north-1.amazonaws.com/staging';
 
 function App() {
   const [flights, setFlights] = useState([]);

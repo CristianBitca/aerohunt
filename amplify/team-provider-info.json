@@ -1,0 +1,27 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify7dcbd26ca8224-staging-95318-authRole",
+      "UnauthRoleArn": "arn:aws:iam::541014998564:role/amplify-amplify7dcbd26ca8224-staging-95318-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::541014998564:role/amplify-amplify7dcbd26ca8224-staging-95318-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-amplify7dcbd26ca8224-staging-95318-deployment",
+      "UnauthRoleName": "amplify-amplify7dcbd26ca8224-staging-95318-unauthRole",
+      "StackName": "amplify-amplify7dcbd26ca8224-staging-95318",
+      "StackId": "arn:aws:cloudformation:eu-north-1:541014998564:stack/amplify-amplify7dcbd26ca8224-staging-95318/8b511720-4976-11ee-ae5a-06f36b0ee728",
+      "AmplifyAppId": "dr8jgwthbywdg"
+    },
+    "categories": {
+      "function": {
+        "aerohunt5725e54b": {},
+        "aerohunt89e622ab": {
+          "deploymentBucketName": "amplify-amplify7dcbd26ca8224-staging-95318-deployment",
+          "s3Key": "amplify-builds/aerohunt89e622ab-5672737a354636493655-build.zip"
+        }
+      },
+      "api": {
+        "apidd93d0bc": {}
+      }
+    }
+  }
+}
