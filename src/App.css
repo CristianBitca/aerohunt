@@ -343,6 +343,18 @@ input[type="radio"] {
     background-color: #f0f0f0;
   }
 
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    h1 {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+  }
+
   @media (min-width: 769px) {
     .form-selector {
       padding: 30px; /* Adjust padding for larger screens */
@@ -356,15 +368,6 @@ input[type="radio"] {
       margin-right: 30px; /* Adjust spacing for larger screens */
     }
 
-    .container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    h1 {
-      margin-top: 10px;
-      font-size: 20px;
-    }
   }
   
   /* Media query for screens smaller than or equal to 480px */
