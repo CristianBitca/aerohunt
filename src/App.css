@@ -196,6 +196,7 @@ select {
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s;
+  width: fit-content;
 }
 
 .details-button:hover {
