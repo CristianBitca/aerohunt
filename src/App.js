@@ -6,7 +6,7 @@ import FormSelector from './components/FormSelector';
 import FlightList from './components/FlightList';
 
 // Update this to your API Gateway URL
-const apiGatewayUrl = 'https://d2j53f5ro8au9g.cloudfront.net';
+const apiGatewayUrl = 'https://ovskvuwt1a.execute-api.eu-north-1.amazonaws.com/staging';
 
 function App() {
   const [flights, setFlights] = useState([]);

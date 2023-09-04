@@ -1,13 +1,6 @@
 {
   "version": 1,
   "paths": {
-    "/api/flights": {
-      "name": "/api/flights",
-      "lambdaFunction": "apirequest",
-      "permissions": {
-        "setting": "open"
-      }
-    },
     "/flights": {
       "name": "/flights",
       "lambdaFunction": "apirequest",
