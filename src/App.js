@@ -5,7 +5,7 @@ import Header from './components/Header';
 import FormSelector from './components/FormSelector';
 import FlightList from './components/FlightList';
 
-const serverBaseUrl = 'https://r4zenm7h76.execute-api.eu-north-1.amazonaws.com';
+const serverBaseUrl = 'https://ovskvuwt1a.execute-api.eu-north-1.amazonaws.com/staging/apirequest-staging';
 
 function App() {
   const [flights, setFlights] = useState([]);
