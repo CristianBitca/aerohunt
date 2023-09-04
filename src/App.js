@@ -5,7 +5,8 @@ import Header from './components/Header';
 import FormSelector from './components/FormSelector';
 import FlightList from './components/FlightList';
 
-const serverBaseUrl = ' https://s3h4dihfb1.execute-api.eu-north-1.amazonaws.com/staging';
+// Update this to your API Gateway URL
+const apiGatewayUrl = 'https://ovskvuwt1a.execute-api.eu-north-1.amazonaws.com/staging';
 
 function App() {
   const [flights, setFlights] = useState([]);
@@ -38,7 +39,7 @@ function App() {
         date_to: reformatDate(searchParams.date_to),
       };
 
-      const response = await axios.get(`${serverBaseUrl}/flights`, {
+      const response = await axios.get(`${apiGatewayUrl}/api/flights`, {
         params: reformattedSearchParams,
       });
 

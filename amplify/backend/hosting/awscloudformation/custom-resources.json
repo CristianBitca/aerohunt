@@ -1,0 +1,11 @@
+{
+    "postBuild": {
+      "commands": [
+        {
+          "command": "npm",
+          "subCommand": "start",
+          "input": "server.js"
+        }
+      ]
+    }
+  }

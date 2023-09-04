@@ -30,6 +30,27 @@ function SearchForm({ searchParams, handleSearchChange, fetchFlights, loading })
             onChange={handleSearchChange}
             className="input-field"
           />
+          <input
+            type="hidden"
+            name="date_to"
+            value={searchParams.date_to = searchParams.date_from}
+            onChange={handleSearchChange}
+            className="input-field"
+          />
+          <input
+            type="hidden"
+            name="return_from"
+            value={searchParams.return_from = ''}
+            onChange={handleSearchChange}
+            className="input-field"
+          />
+          <input
+            type="hidden"
+            name="return_to"
+            value={searchParams.return_to = ''}
+            onChange={handleSearchChange}
+            className="input-field"
+          />
         </div>
         <div className="form-row">
           <p>Passengers</p>

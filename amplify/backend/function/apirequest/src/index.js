@@ -4,28 +4,37 @@ const axios = require('axios');
 const cors = require('cors');
 
 const app = express();
-const port = process.env.PORT || 5000;
-
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get('/flights', async (req, res) => {
+exports.handler = async (event) => {
   try {
     const response = await axios.get('https://tequila-api.kiwi.com/v2/search', {
-      params: req.query,
+      params: event.queryStringParameters,
       headers: {
         apikey: 'LGwBSu6i6Er6b37K1HhtaodbtQqDKI24',
         accept: 'application/json',
       },
     });
 
-    res.status(200).json(response.data.data);
+    const responseBody = JSON.stringify(response.data.data);
+
+    return {
+      statusCode: 200,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: responseBody,
+    };
   } catch (error) {
     console.error('Error fetching flights:', error);
-    res.status(500).json({ error: 'An error occurred while fetching flights' });
-  }
-});
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+    return {
+      statusCode: 500,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ error: 'An error occurred while fetching flights' }),
+    };
+  }
+};
