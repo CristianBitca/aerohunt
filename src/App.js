@@ -6,7 +6,7 @@ import FormSelector from './components/FormSelector';
 import FlightList from './components/FlightList';
 
 // Update this to your API Gateway URL
-const apiGatewayUrl = 'https://ovskvuwt1a.execute-api.eu-north-1.amazonaws.com/staging';
+const apiGatewayUrl = 'https://d2j53f5ro8au9g.cloudfront.net';
 
 function App() {
   const [flights, setFlights] = useState([]);
@@ -39,7 +39,7 @@ function App() {
         date_to: reformatDate(searchParams.date_to),
       };
 
-      const response = await axios.get(`${apiGatewayUrl}/api/flights`, {
+      const response = await axios.get(`${apiGatewayUrl}/flights`, {
         params: reformattedSearchParams,
       });
 

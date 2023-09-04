@@ -1,19 +1,5 @@
 {
   "api": {
-    "apidd93d0bc": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "category": "function",
-          "resourceName": "aerohunt89e622ab"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "API Gateway"
-    },
     "flights": {
       "dependsOn": [
         {
@@ -30,40 +16,14 @@
     }
   },
   "function": {
-    "aerohunt89e622ab": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
     "apirequest": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
   },
-  "hosting": {
-    "S3AndCloudFront": {
-      "providerPlugin": "awscloudformation",
-      "service": "S3AndCloudFront"
-    }
-  },
+  "hosting": {},
   "parameters": {
-    "AMPLIFY_function_aerohunt89e622ab_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "aerohunt89e622ab"
-        }
-      ]
-    },
-    "AMPLIFY_function_aerohunt89e622ab_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "aerohunt89e622ab"
-        }
-      ]
-    },
     "AMPLIFY_function_apirequest_deploymentBucketName": {
       "usedBy": [
         {

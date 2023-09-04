@@ -7,6 +7,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/flights": {
+      "name": "/flights",
+      "lambdaFunction": "apirequest",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }

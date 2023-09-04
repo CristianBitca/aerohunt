@@ -14,21 +14,13 @@
     "categories": {
       "function": {
         "aerohunt5725e54b": {},
-        "aerohunt89e622ab": {
-          "deploymentBucketName": "amplify-amplify7dcbd26ca8224-staging-95318-deployment",
-          "s3Key": "amplify-builds/aerohunt89e622ab-5672737a354636493655-build.zip"
-        },
         "apirequest": {
           "deploymentBucketName": "amplify-amplify7dcbd26ca8224-staging-95318-deployment",
-          "s3Key": "amplify-builds/apirequest-475076314c70766b6c34-build.zip"
+          "s3Key": "amplify-builds/apirequest-3042686162535a5a4e71-build.zip"
         }
       },
       "api": {
-        "apidd93d0bc": {},
         "flights": {}
-      },
-      "hosting": {
-        "S3AndCloudFront": {}
       }
     }
   }
