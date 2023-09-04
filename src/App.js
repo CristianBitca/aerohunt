@@ -5,7 +5,7 @@ import Header from './components/Header';
 import FormSelector from './components/FormSelector';
 import FlightList from './components/FlightList';
 
-const serverBaseUrl = 'https://ovskvuwt1a.execute-api.eu-north-1.amazonaws.com/staging/apirequest-staging';
+const serverBaseUrl = 'https://ovskvuwt1a.execute-api.eu-north-1.amazonaws.com/staging';
 
 function App() {
   const [flights, setFlights] = useState([]);
@@ -38,7 +38,7 @@ function App() {
         date_to: reformatDate(searchParams.date_to),
       };
 
-      const response = await axios.get(`${serverBaseUrl}/flights`, {
+      const response = await axios.get(`${serverBaseUrl}/apirequest-staging`, {
         params: reformattedSearchParams,
       });
 

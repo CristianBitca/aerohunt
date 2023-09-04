@@ -16,7 +16,7 @@
         "aerohunt5725e54b": {},
         "apirequest": {
           "deploymentBucketName": "amplify-amplify7dcbd26ca8224-staging-95318-deployment",
-          "s3Key": "amplify-builds/apirequest-4c74737778366e38594d-build.zip"
+          "s3Key": "amplify-builds/apirequest-794a435747766f587952-build.zip"
         }
       },
       "api": {
