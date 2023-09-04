@@ -1,16 +1,12 @@
-const express = require('express');
-const bodyParser = require('body-parser');
 const axios = require('axios');
-const cors = require('cors');
-
-const app = express();
-app.use(bodyParser.json());
-app.use(cors());
+const querystring = require('querystring');
 
 exports.handler = async (event) => {
   try {
+    const requestBody = querystring.stringify(event.queryStringParameters);
+
     const response = await axios.get('https://tequila-api.kiwi.com/v2/search', {
-      params: event.queryStringParameters,
+      params: requestBody,
       headers: {
         apikey: 'LGwBSu6i6Er6b37K1HhtaodbtQqDKI24',
         accept: 'application/json',
