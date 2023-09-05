@@ -16,10 +16,10 @@ body {
 }
 
 .App-header {
-  background-color: #333;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   padding: 20px;
-  width: 100%;
+  width: auto;
 }
 
 .container {
@@ -47,7 +47,7 @@ h1 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   width: 460px;
-  align-content: center;
+  align-items: center;
 }
 
 .search-form-heading {
@@ -182,6 +182,7 @@ select {
   font-size: 24px;
   font-weight: bold;
   margin-top: 15px;
+  width: fit-content;
 }
 
 .details-button {
@@ -269,6 +270,7 @@ header {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
+  background-color: #f0f0f0;
 }
 
 .radio-option:last-child {
@@ -276,7 +278,7 @@ header {
 }
 
 .radio-option:hover {
-  background-color: #f0f0f0;
+  background-color: var(--accent-color);
 }
 
 input[type="radio"] {
@@ -366,7 +368,7 @@ input[type="radio"] {
     .container {
       flex-direction: column;
       text-align: center;
-      width: 100%;
+      width: fit-content;
     }
   
     h1 {
