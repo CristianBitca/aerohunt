@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SearchFormOneWay from './SearchFormOneWay';
 import SearchFormOneWayRange from './SearchFormOneWayRange';
 import SearchFormReturn from './SearchFormReturn';
@@ -23,12 +23,7 @@ const FormComponentMapping = {
   },
 };
 
-function FormSelector({ searchParams, handleSearchChange, fetchFlights, loading }) {
-  const [selectedForm, setSelectedForm] = useState('oneWay');
-
-  const handleFormChange = (event) => {
-    setSelectedForm(event.target.value);
-  };
+function FormSelector({ searchParams, handleSearchChange, fetchFlights, loading, selectedForm, handleFormChange }) {
 
   const renderSelectedForm = () => {
     const SelectedFormComponent = FormComponentMapping[selectedForm].component;
@@ -53,7 +48,7 @@ function FormSelector({ searchParams, handleSearchChange, fetchFlights, loading 
               name="formSelector"
               value={formKey}
               checked={selectedForm === formKey}
-              onChange={handleFormChange}
+              onChange={() => handleFormChange(formKey)}
             />
             <label htmlFor={`${formKey}Form`} className="radio-label">
               {FormComponentMapping[formKey].label}

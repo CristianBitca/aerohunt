@@ -19,7 +19,7 @@ body {
   background-color: var(--primary-color);
   color: var(--text-color);
   padding: 20px;
-  width: auto;
+  width: 100%;
 }
 
 .container {
@@ -28,6 +28,7 @@ body {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  width: fit-content;
 }
 
 img {
@@ -221,8 +222,8 @@ header {
 }
 
 .logo img {
-  width: 500px;
-  height: 100px;
+  max-width: 600px;
+  height: auto;
 }
 
 .flight-list-container {

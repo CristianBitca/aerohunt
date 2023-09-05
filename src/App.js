@@ -22,10 +22,28 @@ function App() {
     infants: '0',
     selected_cabins: 'M',
   });
+  const [selectedForm, setSelectedForm] = useState('oneWay');
 
   const handleSearchChange = (event) => {
     const { name, value } = event.target;
     setSearchParams((prevParams) => ({ ...prevParams, [name]: value }));
+  };
+
+  const handleFormChange = (formKey) => {
+    setSelectedForm(formKey);
+    // Reset search parameters when the form changes
+    setSearchParams({
+      fly_from: '',
+      fly_to: '',
+      date_from: '',
+      date_to: '',
+      return_from: '',
+      return_to: '',
+      adults: '1',
+      children: '0',
+      infants: '0',
+      selected_cabins: 'M',
+    });
   };
 
   const fetchFlights = async () => {
@@ -64,6 +82,8 @@ function App() {
           handleSearchChange={handleSearchChange}
           fetchFlights={fetchFlights}
           loading={loading}
+          selectedForm={selectedForm}
+          handleFormChange={handleFormChange}
         />
       </div>
       <div>
