@@ -10,13 +10,15 @@ function SearchForm({ searchParams, handleSearchChange, fetchFlights, loading })
       <h1 className="search-form-heading">Search for Flights One Way</h1>
       <div className="search-form">
         <div className="form-row">
-          <p>Fly From</p>
+        <p>Fly From</p>
           <AutosuggestionInput
+            key="fly_from"
             value={searchParams.fly_from}
             onChange={(value) => handleSearchChange({ target: { name: 'fly_from', value } })}
           />
           <p>Fly To</p>
           <AutosuggestionInput
+            key="fly_to"
             value={searchParams.fly_to}
             onChange={(value) => handleSearchChange({ target: { name: 'fly_to', value } })}
           />
