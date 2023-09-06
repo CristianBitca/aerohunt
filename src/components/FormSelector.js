@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SearchFormOneWay from './SearchFormOneWay';
 import SearchFormOneWayRange from './SearchFormOneWayRange';
 import SearchFormReturn from './SearchFormReturn';
 import SearchFormReturnRange from './SearchFormReturnRange';
+import FlightList from './FlightList'; // Import the FlightList component
 
 const FormComponentMapping = {
   oneWay: {
@@ -23,7 +24,12 @@ const FormComponentMapping = {
   },
 };
 
-function FormSelector({ searchParams, handleSearchChange, fetchFlights, loading, selectedForm, handleFormChange }) {
+function FormSelector({ searchParams, handleSearchChange, fetchFlights, loading }) {
+  const [selectedForm, setSelectedForm] = useState('oneWay'); // Initialize selectedForm state
+
+  const handleFormChange = (formKey) => {
+    setSelectedForm(formKey);
+  };
 
   const renderSelectedForm = () => {
     const SelectedFormComponent = FormComponentMapping[selectedForm].component;
@@ -40,7 +46,7 @@ function FormSelector({ searchParams, handleSearchChange, fetchFlights, loading,
   return (
     <div className="form-selector">
       <div className="radio-container">
-        {Object.keys(FormComponentMapping).map(formKey => (
+        {Object.keys(FormComponentMapping).map((formKey) => (
           <div className="radio-option" key={formKey}>
             <input
               type="radio"
@@ -58,6 +64,9 @@ function FormSelector({ searchParams, handleSearchChange, fetchFlights, loading,
       </div>
       <div className="selected-form">
         {renderSelectedForm()}
+      </div>
+      <div className="flight-list-container">
+        {selectedForm !== 'none' && <FlightList flights={[]} loading={loading} />}
       </div>
     </div>
   );

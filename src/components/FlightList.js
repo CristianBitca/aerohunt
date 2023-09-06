@@ -7,13 +7,10 @@
         {loading ? (
           <p>Loading...</p>
         ) : (
-          <div className="flight-list-header">
-            <h1>Flight to</h1>
           <div className="flight-cards">
             {flights.map((flight) => (
               <FlightCard key={flight.id} flight={flight} />
             ))}
-            </div>
           </div>
         )}
       </div>
