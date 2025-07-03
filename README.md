@@ -27,95 +27,65 @@
 | Build Tools | Vite or Webpack                  |
 
 ---
+## ⚙️ Getting Started
 
-## 📁 Project Structure
+> **Live data will not be displayed until a public or paid API is configured.**  
+> You can still run the interface locally to explore the UI/UX.
 
-AERO-Hunt/
-│
-├── public/ # Static assets
-│
-├── src/
-│ ├── components/ # Reusable components
-│ │ ├── SearchBar.jsx
-│ │ ├── FlightList.jsx
-│ │ ├── FlightCard.jsx
-│ │ └── Loader.jsx
-│ │
-│ ├── pages/ # Page-level views
-│ │ └── Home.jsx
-│ │
-│ ├── services/ # API and utility functions
-│ │ └── flightService.js
-│ │
-│ ├── App.jsx # Main application component
-│ └── index.js # Application entry point
-│
-├── package.json # Project metadata and dependencies
-└── README.md # Project documentation
+### 🔧 Installation
 
-## Available Scripts
+1. **Clone the repository**
 
-In the project directory, you can run:
+```bash
+git clone https://github.com/yourusername/AERO-Hunt.git
+cd AERO-Hunt
+Install dependencies
 
-### `npm start`
+bash
+Copy
+Edit
+npm install
+Run the app locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy
+Edit
+npm start
+Visit http://localhost:3000 in your browser to view the app.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📉 Known Issues
+🔒 The flight data API has become private, and no real-time data can be fetched.
 
-### `npm test`
+🔧 A new data provider (e.g., Skyscanner, Amadeus, Kiwi) needs to be integrated for full functionality.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+✅ Future Improvements
+🔄 Integrate a new, reliable flight data API
 
-### `npm run build`
+🔍 Add search filters (price, duration, airline, stops)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🧳 Implement user accounts and saved searches
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📱 Enhance mobile UI and performance
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+📤 Deploy app to Vercel, Netlify, or your preferred cloud platform
 
-### `npm run eject`
+🤝 Contributing
+Contributions are welcome! If you have suggestions or improvements, feel free to:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Fork the project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Create a feature branch
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Commit your changes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Submit a Pull Request
 
-## Learn More
+Please open an issue first for major changes to discuss your ideas.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📄 License
+This project is licensed under the MIT License.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📬 Contact
+Cristi Bitca
+📧 bitca@example.com (replace with your actual email)
+🔗 LinkedIn (optional)
