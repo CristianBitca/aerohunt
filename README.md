@@ -67,6 +67,6 @@ This project is licensed under the **MIT License**.
 
 **Cristi Bitca**  
 📧 cristibitca2020@gmail.com 
-🔗 [LinkedIn]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/cristian-bitca-58ab10211/))
+🔗 [LinkedIn]([https://www.linkedin.com/in/cristian-bitca-58ab10211/])
 
 ---
