@@ -1,6 +1,34 @@
-# Getting Started with Create React App
+# ✈️ AERO Hunt - Flight Metasearch Engine
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**AERO Hunt** is a modern flight metasearch engine that aggregates real-time flight data from various airlines and online travel agencies into one convenient and responsive web interface. Built with a modular, component-based architecture using **React** and **JavaScript**, AERO Hunt aims to simplify the travel planning process by offering a seamless user experience.
+
+> ⚠️ **Important Note:** The application is currently **non-functional** because the third-party API used to fetch flight data has become private. The interface is working, but no live data will be displayed until an alternative data source is integrated.
+
+---
+
+## 🚀 Features
+
+- ✅ Clean and intuitive flight search interface  
+- ✅ Modular architecture with reusable components  
+- ✅ Built with responsive design principles  
+- ✅ Easy integration with flight data APIs *(currently disabled)*  
+- ✅ Scalable structure for future feature additions (filters, sorting, login, etc.)
+
+---
+
+## 🧱 Tech Stack
+
+| Layer       | Technologies Used               |
+|-------------|----------------------------------|
+| Front-End   | React, JavaScript, JSX, HTML, CSS |
+| State       | React Hooks                      |
+| Styling     | CSS Modules / Tailwind *(optional)* |
+| API         | External Flight Data API *(private)* |
+| Build Tools | Vite or Webpack                  |
+
+---
+
+## 📁 Project Structure
 
 ## Available Scripts
 
