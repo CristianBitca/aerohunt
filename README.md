@@ -27,65 +27,46 @@
 | Build Tools | Vite or Webpack                  |
 
 ---
-## ⚙️ Getting Started
+## 📉 Known Issues
 
-> **Live data will not be displayed until a public or paid API is configured.**  
-> You can still run the interface locally to explore the UI/UX.
+- 🔒 The flight data API has become **private**, and no real-time data can be fetched.
+- 🔧 A new data provider (e.g., Skyscanner, Amadeus, Kiwi) needs to be integrated for full functionality.
 
-### 🔧 Installation
+---
 
-1. **Clone the repository**
+## ✅ Future Improvements
 
-```bash
-git clone https://github.com/yourusername/AERO-Hunt.git
-cd AERO-Hunt
-Install dependencies
+- 🔄 Integrate a new, reliable flight data API  
+- 🔍 Add search filters (price, duration, airline, stops)  
+- 🧳 Implement user accounts and saved searches  
+- 📱 Enhance mobile UI and performance  
+- 📤 Deploy app to Vercel, Netlify, or your preferred cloud platform
 
-bash
-Copy
-Edit
-npm install
-Run the app locally
+---
 
-bash
-Copy
-Edit
-npm start
-Visit http://localhost:3000 in your browser to view the app.
+## 🤝 Contributing
 
-📉 Known Issues
-🔒 The flight data API has become private, and no real-time data can be fetched.
-
-🔧 A new data provider (e.g., Skyscanner, Amadeus, Kiwi) needs to be integrated for full functionality.
-
-✅ Future Improvements
-🔄 Integrate a new, reliable flight data API
-
-🔍 Add search filters (price, duration, airline, stops)
-
-🧳 Implement user accounts and saved searches
-
-📱 Enhance mobile UI and performance
-
-📤 Deploy app to Vercel, Netlify, or your preferred cloud platform
-
-🤝 Contributing
 Contributions are welcome! If you have suggestions or improvements, feel free to:
 
-Fork the project
+1. Fork the project  
+2. Create a feature branch  
+3. Commit your changes  
+4. Submit a Pull Request
 
-Create a feature branch
+> Please open an issue first for major changes to discuss your ideas.
 
-Commit your changes
+---
 
-Submit a Pull Request
+## 📄 License
 
-Please open an issue first for major changes to discuss your ideas.
+This project is licensed under the **MIT License**.
 
-📄 License
-This project is licensed under the MIT License.
+---
 
-📬 Contact
-Cristi Bitca
-📧 bitca@example.com (replace with your actual email)
-🔗 LinkedIn (optional)
+## 📬 Contact
+
+**Cristi Bitca**  
+📧 cristibitca2020@gmail.com 
+🔗 [LinkedIn]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/cristian-bitca-58ab10211/))
+
+---
