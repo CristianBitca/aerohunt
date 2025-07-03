@@ -30,6 +30,29 @@
 
 ## 📁 Project Structure
 
+AERO-Hunt/
+│
+├── public/ # Static assets
+│
+├── src/
+│ ├── components/ # Reusable components
+│ │ ├── SearchBar.jsx
+│ │ ├── FlightList.jsx
+│ │ ├── FlightCard.jsx
+│ │ └── Loader.jsx
+│ │
+│ ├── pages/ # Page-level views
+│ │ └── Home.jsx
+│ │
+│ ├── services/ # API and utility functions
+│ │ └── flightService.js
+│ │
+│ ├── App.jsx # Main application component
+│ └── index.js # Application entry point
+│
+├── package.json # Project metadata and dependencies
+└── README.md # Project documentation
+
 ## Available Scripts
 
 In the project directory, you can run:
